@@ -1,0 +1,64 @@
+section{
+    background-color: #5569dc;
+    min-height: 80vh;
+}
+section .menu{
+    min-height: 70px;
+    display: flex;
+    justify-content: center;
+}
+section .menu a{
+    color: #fff;
+    padding: 10px;
+    margin: 20px 10px;
+    font-size: 1.5rem;
+    font-weight: 700;
+    letter-spacing: 1px;
+    transition: 0.3s ease-in-out;
+}
+section .menu a:hover{
+    color: #bbb;
+}
+section .container{
+    display: flex;
+}
+section .container .container-titles{
+    background:url(../../imagens/FundoClaro.png) center;
+    background-size: cover;
+    width: 1400px;
+    min-height: 700px;
+    display: flex;
+    align-items:center;
+    justify-content:flex-start;
+    
+}
+section .container .container-titles .container-texts{
+    margin-left: 15%;
+    color: #fff;
+    text-shadow:
+          1px -1px 0 #000,
+          1px 1px 0 #000,
+          1px 1px 0 #000,
+          1px 1px 0 #000; 
+}
+section .container .container-titles .container-texts h2{
+    font-size: 4rem ;
+    font-weight: 300;
+}
+section .container .container-titles .container-texts h1{
+    font-family: 'Spectral', serif;
+    font-size:7rem;
+    font-weight: 700;
+}
+section .container .container-titles .container-texts h3{
+    font-size: 3rem;
+}
+section .container .container-contact{
+    display: flex;
+    flex-direction: column;
+    justify-content:space-between;
+    align-items: center;
+    background-color: red;
+    width: ;
+}
+

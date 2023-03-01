@@ -1,9 +1,16 @@
 import { Button } from "../button"
+import './header.css'
+import img from "../../imagens/FundoClaro.png"
 
 export const Header = () => {
     return(
         <section>
-           <div className="menu"></div> 
+           <div className="menu">
+                <a href="#sobre">Sobre</a>
+                <a href="#formacao">Formaçao e Experiência</a>
+                <a href="#habilidades">Habilidade e Idiomas</a>
+                <a href="#interesses">Interesses</a>
+            </div>
            <div className="container">
                 <div className="container-titles">
                     <div className="container-texts">
@@ -13,9 +20,6 @@ export const Header = () => {
                     </div>
                 </div>
                 <div className="container-contact">
-                    <div className="container-image">
-
-                    </div>
                     <h2>Jackson Grutka</h2>
                     <p>Cursando superior em <br/> análise e desenvolvimento de sistemas <br/> porto alegre, RS</p>
                     <a href="#">colocar um site aqui</a>
