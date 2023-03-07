@@ -7,47 +7,47 @@ import styled from "styled-components"
 
 
 export const Home = () => {
-    return(
+    return (
         <>
             <Header>
-                <Menu className="menu">
-                        <a href="#sobre">Sobre</a>
-                        <a href="#formacao">Formaçao e Experiência</a>
-                        <a href="#habilidades">Habilidade e Idiomas</a>
-                        <a href="#interesses">Interesses</a>
-                    </Menu>
+                <Menu id="menu">
+                    <a href="#sobre">Sobre</a>
+                    <a href="#formacao">Formaçao e Experiência</a>
+                    <a href="#habilidades">Habilidade e Idiomas</a>
+                    <a href="#interesses">Interesses</a>
+                </Menu>
                 <HeaderContainer>
-                        <Titles>
-                            <div>
-                                <h3>OLÁ! EU SOU</h3>
-                                <h1>Jackson Grutka</h1>
-                                <h2>Desenvolvedor Front-End</h2>
-                            </div>
-                        </Titles>
-                        <Contact>
-                            <CentralizeContact >
-                                <Image>
-                                    <img src={imgJackson}></img>
-                                </Image>
-                                <h2>Jackson Grutka</h2>
-                                <p >Cursando superior em análise e desenvolvimento de sistemas <br/> porto alegre, RS</p>
-                                <Number>
-                                    <p>jgrutka01@gmail.com</p>
-                                    <p className="number"><FontAwesomeIcon icon={faWhatsapp} className="icon" />(51)989215428</p>
-                                </Number>
-                                <Icons>
-                                    <a href="https://www.instagram.com/jacksongrutka/"><FontAwesomeIcon icon={faInstagram} className="icon" /></a>
-                                    <a href="https://www.linkedin.com/in/jackson-grutka-048633225/"><FontAwesomeIcon icon={faLinkedin} className="icon" /></a>
-                                    <a href="https://github.com/Jacksongrutka"><FontAwesomeIcon icon={faGithub} className="icon" /></a>
-                                </Icons>
-                                <ContainerButton>
-                                    <Button/>
-                                </ContainerButton>
-                            </CentralizeContact>
-                        </Contact>
+                    <Titles>
+                        <div>
+                            <h3>OLÁ! EU SOU</h3>
+                            <h1>Jackson Grutka</h1>
+                            <h2>Desenvolvedor Front-End</h2>
+                        </div>
+                    </Titles>
+                    <Contact>
+                        <CentralizeContact >
+                            <Image>
+                                <img src={imgJackson}></img>
+                            </Image>
+                            <h2>Jackson Grutka</h2>
+                            <p >Cursando superior em análise e desenvolvimento de sistemas <br /> porto alegre, RS</p>
+                            <Number>
+                                <p>jgrutka01@gmail.com</p>
+                                <p className="number"><FontAwesomeIcon icon={faWhatsapp} className="icon" />(51)989215428</p>
+                            </Number>
+                            <Icons>
+                                <a href="https://www.instagram.com/jacksongrutka/"><FontAwesomeIcon icon={faInstagram} className="icon" /></a>
+                                <a href="https://www.linkedin.com/in/jackson-grutka-048633225/"><FontAwesomeIcon icon={faLinkedin} className="icon" /></a>
+                                <a href="https://github.com/Jacksongrutka"><FontAwesomeIcon icon={faGithub} className="icon" /></a>
+                            </Icons>
+                            <ContainerButton>
+                                <Button />
+                            </ContainerButton>
+                        </CentralizeContact>
+                    </Contact>
                 </HeaderContainer>
             </Header>
-            <Sobre>
+            <Sobre id="sobre">
                 <div>
                     <h2>Sobre</h2>
                     <h3>MINHA HISTORIA</h3>
@@ -56,7 +56,7 @@ export const Home = () => {
             </Sobre>
             <Conteudo>
                 <CentralizacaoConteudo>
-                    <FormacaoProjetos>
+                    <FormacaoProjetos id="formacao">
                         <Formacao>
                             <h2>Formaçao</h2>
                             <h3>O QUE APRENDI</h3>
@@ -68,38 +68,65 @@ export const Home = () => {
                         <Projetos>
                             <h2>Projetos</h2>
                             <h3>EXEMPLOS</h3>
-                                <ContainerProjeto>
-                                    <a href="https://www.google.com.br/" target="_blank">Poke-List</a>
-                                    <p>uma listagem dos pokemons usando a poke API</p>
-                                    <div>
-                                        <img></img>
-                                    </div>
-                                </ContainerProjeto>
+                            <ContainerProjeto>
+                                <a href="https://www.google.com.br/" target="_blank">Poke-List</a>
+                                <p>uma listagem dos pokemons usando a poke API</p>
+                                <div>
+                                    <img></img>
+                                </div>
+                            </ContainerProjeto>
                         </Projetos>
                     </FormacaoProjetos>
-                    <Habilidades>
+                    <Habilidades id="habilidades">
                         <h2>Habilidade e Idiomas</h2>
                         <h3>O QUE OFEREÇO</h3>
                         <ContainerHabilidade>
                             <h4>HTML</h4>
                             <Base>
-                            <div style={{width:'80%'}}/>
+                                <div style={{ width: '80%' }} />
                             </Base>
                         </ContainerHabilidade>
                         <ContainerHabilidade>
                             <h4>CSS</h4>
                             <Base>
-                            <div style={{width:'90%'}}/>
+                                <div style={{ width: '90%' }} />
                             </Base>
                         </ContainerHabilidade>
                     </Habilidades>
-                    <Interesses>
+                    <Interesses id="interesses">
                         <h2>Interesses</h2>
                         <h3>FORA DO ESCRITÓRIO</h3>
-
                     </Interesses>
                 </CentralizacaoConteudo>
             </Conteudo>
+            <Footer>
+                <ContainerFooter>
+                    <SocialMedia>
+                        <h3>Adoraria ouvir de voçê</h3>
+                        <div>
+                            <Icons>
+                                <a href="https://www.instagram.com/jacksongrutka/"><FontAwesomeIcon icon={faInstagram} className="icon" /></a>
+                                <a href="https://www.linkedin.com/in/jackson-grutka-048633225/"><FontAwesomeIcon icon={faLinkedin} className="icon" /></a>
+                                <a href="https://github.com/Jacksongrutka"><FontAwesomeIcon icon={faGithub} className="icon" /></a>
+                            </Icons>
+                        </div>
+                    </SocialMedia>
+                    <FooterContacts>
+                        <div>
+                            <p>jgrutka01@gmail.com</p>
+                            <p className="number"><FontAwesomeIcon icon={faWhatsapp} className="icon" />(51)989215428</p>
+                        </div>
+                        <div>
+                            <Button />
+                        </div>
+                    </FooterContacts>
+                    <ContainerArrow>
+                        <a href="#menu">
+                        <FontAwesomeIcon icon="fa-solid fa-circle-arrow-up" className="arrow" />
+                        </a>
+                    </ContainerArrow>
+                </ContainerFooter>
+            </Footer>
         </>
     )
 }
@@ -227,21 +254,21 @@ const Sobre = styled.section`
         line-height: 40px;
     }
     `
-    const Conteudo = styled.section`
+const Conteudo = styled.section`
     display: flex;
     flex-direction: column;
     align-items: center;
     background-color: #fff;
     `
-    const CentralizacaoConteudo = styled.div`
+const CentralizacaoConteudo = styled.div`
     width: 50%;
     background-color:#fff;
     `
-    const FormacaoProjetos = styled.div`
+const FormacaoProjetos = styled.div`
     display:flex;
     margin: 100px 0;
     `
-    const Formacao = styled.div`
+const Formacao = styled.div`
     width:50%;
     padding-right: 5%;
     h2{
@@ -254,7 +281,7 @@ const Sobre = styled.section`
         margin-bottom: 40px;
     }
     `
-    const ContainerCurso = styled.div`
+const ContainerCurso = styled.div`
     h4{
         font-size:1.5rem;
         padding-bottom: 10px;
@@ -265,7 +292,7 @@ const Sobre = styled.section`
         color: #666;
     }
     `
-    const Projetos = styled.div`
+const Projetos = styled.div`
     width:50%;
     padding-left:5%;
 
@@ -279,7 +306,7 @@ const Sobre = styled.section`
         margin-bottom: 40px;
     }
     `
-    const ContainerProjeto = styled.div`
+const ContainerProjeto = styled.div`
     a{
         font-size:1.5rem;
         display:block;
@@ -297,7 +324,7 @@ const Sobre = styled.section`
         height: 250px;
     }
     `
-    const Habilidades = styled.div`
+const Habilidades = styled.div`
     margin: 100px 0;
     h2{
         font-size: 3rem;
@@ -309,7 +336,7 @@ const Sobre = styled.section`
         margin-bottom: 40px;
     }
     `
-    const ContainerHabilidade = styled.div`
+const ContainerHabilidade = styled.div`
     display:flex;
     margin-bottom:10px;
         h4{
@@ -317,7 +344,7 @@ const Sobre = styled.section`
             width:15%;
         }
     `
-    const Base = styled.div`
+const Base = styled.div`
         width:85%;
         height: 15px;
         border-bottom: 1px solid #ccc;
@@ -326,7 +353,7 @@ const Sobre = styled.section`
             border-bottom:2px solid #5569dc;
         }
     `
-    const Interesses = styled.div`
+const Interesses = styled.div`
         margin: 100px 0;
         h2{
             font-size: 3rem;
@@ -337,3 +364,46 @@ const Sobre = styled.section`
             color: #5569dc;
         }
     `
+const Footer = styled.div`
+    min-height: 50vh;
+    display:flex;
+    background-color:#e1e3fb;
+    justify-content: center;
+    align-items: center;
+    `
+const ContainerFooter = styled.div`
+    display:flex;
+    width: 50%;
+    justify-content: space-between;
+    height: 20vh;
+    `
+const SocialMedia = styled.div`
+    display:flex;
+    flex-direction: column;
+    justify-content: space-between;
+    h3{
+        font-size:2rem;
+    }
+    `
+const FooterContacts = styled.div`
+    display:flex;
+    flex-direction: column;
+    justify-content: space-between;
+    div p{
+        font-size: 1.5rem;
+    }
+    div .icon{
+        width: 1.5rem;
+        height: 1.5rem;
+    }
+    `
+
+const ContainerArrow = styled.div`
+    display:flex;
+    flex-direction: column;
+    justify-content:end;
+    a .arrow{
+        width:3rem;
+        height: 3rem;
+    }
+`

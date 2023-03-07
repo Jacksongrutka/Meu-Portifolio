@@ -27,10 +27,13 @@ const GlobalStyle = createGlobalStyle`
   img{
     width:100%;
   }
+  html {
+    scroll-behavior: smooth;
+  }
 `
 const Main = styled.div`
 min-height: 100vh;
-background-color:gray;
+background-color:#fff;
 `
 
 export default App;
