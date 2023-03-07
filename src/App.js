@@ -1,4 +1,4 @@
-import { Header } from "./components/header";
+import { Home } from "./components/home";
 import styled from "styled-components";
 import { createGlobalStyle } from 'styled-components';
 
@@ -6,7 +6,7 @@ function App() {
   return (
     <Main>
       <GlobalStyle/>
-      <Header/>
+      <Home/>
     </Main>
   );
 }
@@ -18,6 +18,7 @@ const GlobalStyle = createGlobalStyle`
     font-size: 10px;
     font-family: 'Poppins', sans-serif;
     font-weight: 400;
+    box-sizing: border-box;
   }
   a{
       text-decoration: none;
