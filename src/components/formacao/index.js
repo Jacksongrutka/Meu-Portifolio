@@ -1,6 +1,35 @@
 import styled from "styled-components"
+import { useContext } from "react"
+import { ThemeContext } from "../../contexts/themeContext"
 
 export const Formacao = () => {
+    
+    const {theme} = useContext(ThemeContext)
+
+    const Container = styled.div`
+    width:50%;
+    padding-right: 5%;
+    h2{
+        font-size: 3rem;
+        color: ${theme.secundaryColor};
+    }
+    h3{
+        font-size: 2rem;
+        color: ${theme.secundaryColor};
+        margin-bottom: 40px;
+    }
+    `
+const ContainerCurso = styled.div`
+    h4{
+        font-size:1.5rem;
+        padding-bottom: 10px;
+        color: ${theme.secundaryColor};
+    }
+    p{
+        font-size:1.5rem;
+        color: ${theme.primaryColor};
+    }
+    `
     return (
         <Container>
             <h2>Formaçao</h2>
@@ -12,27 +41,3 @@ export const Formacao = () => {
         </Container>
     )
 }
-const Container = styled.div`
-    width:50%;
-    padding-right: 5%;
-    h2{
-        font-size: 3rem;
-        color: #5569dc;
-    }
-    h3{
-        font-size: 2rem;
-        color: #5569dc;
-        margin-bottom: 40px;
-    }
-    `
-const ContainerCurso = styled.div`
-    h4{
-        font-size:1.5rem;
-        padding-bottom: 10px;
-        color: #666;
-    }
-    p{
-        font-size:1.5rem;
-        color: #666;
-    }
-    `

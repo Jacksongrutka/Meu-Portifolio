@@ -36,7 +36,6 @@ const GlobalStyle = createGlobalStyle`
 `
 const Main = styled.div`
 min-height: 100vh;
-background-color:#fff;
 `
 
 export default App;

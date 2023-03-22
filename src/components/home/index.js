@@ -6,10 +6,29 @@ import { Projetos } from "../projetos"
 import { Habilidades } from "../habilidades"
 import { Footer } from "../footer"
 import { Interesses } from "../interesses"
+import { useContext } from "react"
+import { ThemeContext } from "../../contexts/themeContext"
+
 
 
 
 export const Home = () => {
+
+    const {theme} = useContext(ThemeContext)
+
+    const Conteudo = styled.section`
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        background-color:${theme.tercearyBackgroundColor}
+        `
+    const CentralizacaoConteudo = styled.div`
+        width: 50%;
+        `
+    const FormacaoProjetos = styled.div`
+        display:flex;
+        margin: 100px 0;
+        `
     return (
         <>
             <Header/>
@@ -29,17 +48,3 @@ export const Home = () => {
     )
 }
 
-const Conteudo = styled.section`
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    background-color: #fff;
-    `
-const CentralizacaoConteudo = styled.div`
-    width: 50%;
-    background-color:#fff;
-    `
-const FormacaoProjetos = styled.div`
-    display:flex;
-    margin: 100px 0;
-    `

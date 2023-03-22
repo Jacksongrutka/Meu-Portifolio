@@ -1,17 +1,28 @@
 import { createContext, useState } from "react";
+import imgLight from '../imagens/FundoClaro.png'
+import imgDark from '../imagens/FundoEscuro.png'
+import { faSun , faMoon } from '@fortawesome/free-solid-svg-icons'
 
 
 export const themes = {
     light:{
-        color:"#000000",
-        themeLabel: "Daymode",
-        backgroundColor: "#fff"
+        primaryColor:"#000",
+        secundaryColor:"#5569dc",
+        themeIcon: faSun,
+        primaryBackgroundColor: "#5569dc",
+        secundaryBackgroundColor: "#e1e3fb",
+        tercearyBackgroundColor: "#fff",
+        headerImg: imgLight
 
     },
     dark:{
-        color: "#ffffff",
-        themeLabel: "Nigthmode",
-        backgroundColor: "#000"
+        primaryColor:"#fff",
+        secundaryColor:"#7d8aec",
+        themeIcon: faMoon,
+        primaryBackgroundColor: "#020d3f",
+        secundaryBackgroundColor: "#0a2d6c",
+        tercearyBackgroundColor: "#000",
+        headerImg: imgDark
     }
 }
 
