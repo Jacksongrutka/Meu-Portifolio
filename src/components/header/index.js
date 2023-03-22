@@ -4,6 +4,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faWhatsapp, faInstagram, faLinkedin, faGithub } from '@fortawesome/free-brands-svg-icons'
 import { Button } from "../button"
 import styled from "styled-components"
+import { ThemeButtonContext } from "../themeButtonContext"
 
 export const Header = () => {
     return(
@@ -13,6 +14,8 @@ export const Header = () => {
                     <a href="#formacao">Formaçao e Experiência</a>
                     <a href="#habilidades">Habilidade e Idiomas</a>
                     <a href="#interesses">Interesses</a>
+                    <ThemeButtonContext/>
+
                 </Menu>
                 <HeaderContainer>
                     <Titles>

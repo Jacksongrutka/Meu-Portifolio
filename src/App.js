@@ -1,12 +1,15 @@
 import { Home } from "./components/home";
 import styled from "styled-components";
 import { createGlobalStyle } from 'styled-components';
+import { ThemeProvider } from './contexts/themeContext';
 
 function App() {
   return (
     <Main>
+      <ThemeProvider>
       <GlobalStyle/>
       <Home/>
+      </ThemeProvider>
     </Main>
   );
 }
