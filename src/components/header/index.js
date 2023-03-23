@@ -12,8 +12,56 @@ export const Header = () => {
 
     const {theme} = useContext(ThemeContext)
 
-    const Container = styled.section`
-    background-color: ${theme.primaryBackgroundColor};
+    return (
+        <Container>
+            <Menu id="menu">
+                <a href="#sobre">Sobre</a>
+                <a href="#formacao">Formaçao e Experiência</a>
+                <a href="#habilidades">Habilidade e Idiomas</a>
+                <a href="#interesses">Interesses</a>
+                <ThemeButtonContext />
+
+            </Menu>
+            <HeaderContainer>
+                <Titles style={{
+                    backgroundImage: `url(${theme.headerImg})`,
+                    backgroundPosition: "center center",
+                }}>
+
+                    <div>
+                        <h3>OLÁ! EU SOU</h3>
+                        <h1>Jackson Grutka</h1>
+                        <h2>Desenvolvedor Front-End</h2>
+                    </div>
+                </Titles>
+                <Contact>
+                    <CentralizeContact >
+                        <Image>
+                            <img src={imgJackson}></img>
+                        </Image>
+                        <h2>Jackson Grutka</h2>
+                        <p >Cursando superior em análise e desenvolvimento de sistemas <br /> porto alegre, RS</p>
+                        <Number>
+                            <p>jgrutka01@gmail.com</p>
+                            <p className="number"><FontAwesomeIcon icon={faWhatsapp} className="icon" />(51)989215428</p>
+                        </Number>
+                        <Icons>
+                            <a href="https://www.instagram.com/jacksongrutka/"><FontAwesomeIcon icon={faInstagram} className="icon" /></a>
+                            <a href="https://www.linkedin.com/in/jackson-grutka-048633225/"><FontAwesomeIcon icon={faLinkedin} className="icon" /></a>
+                            <a href="https://github.com/Jacksongrutka"><FontAwesomeIcon icon={faGithub} className="icon" /></a>
+                        </Icons>
+                        <ContainerButton>
+                            <Button />
+                        </ContainerButton>
+                    </CentralizeContact>
+                </Contact>
+            </HeaderContainer>
+        </Container>
+    )
+}
+
+const Container = styled.section`
+    background-color: ${(props) => useContext(ThemeContext).theme.primaryBackgroundColor};
     min-height: 80vh;
 `
 const Menu = styled.div`
@@ -112,52 +160,4 @@ const Icons = styled.div`
 const ContainerButton = styled.div`
     margin-bottom: 100px;
 `
-
-    return (
-        <Container>
-            <Menu id="menu">
-                <a href="#sobre">Sobre</a>
-                <a href="#formacao">Formaçao e Experiência</a>
-                <a href="#habilidades">Habilidade e Idiomas</a>
-                <a href="#interesses">Interesses</a>
-                <ThemeButtonContext />
-
-            </Menu>
-            <HeaderContainer>
-                <Titles style={{
-                    backgroundImage: `url(${theme.headerImg})`,
-                    backgroundPosition: "center center",
-                }}>
-
-                    <div>
-                        <h3>OLÁ! EU SOU</h3>
-                        <h1>Jackson Grutka</h1>
-                        <h2>Desenvolvedor Front-End</h2>
-                    </div>
-                </Titles>
-                <Contact>
-                    <CentralizeContact >
-                        <Image>
-                            <img src={imgJackson}></img>
-                        </Image>
-                        <h2>Jackson Grutka</h2>
-                        <p >Cursando superior em análise e desenvolvimento de sistemas <br /> porto alegre, RS</p>
-                        <Number>
-                            <p>jgrutka01@gmail.com</p>
-                            <p className="number"><FontAwesomeIcon icon={faWhatsapp} className="icon" />(51)989215428</p>
-                        </Number>
-                        <Icons>
-                            <a href="https://www.instagram.com/jacksongrutka/"><FontAwesomeIcon icon={faInstagram} className="icon" /></a>
-                            <a href="https://www.linkedin.com/in/jackson-grutka-048633225/"><FontAwesomeIcon icon={faLinkedin} className="icon" /></a>
-                            <a href="https://github.com/Jacksongrutka"><FontAwesomeIcon icon={faGithub} className="icon" /></a>
-                        </Icons>
-                        <ContainerButton>
-                            <Button />
-                        </ContainerButton>
-                    </CentralizeContact>
-                </Contact>
-            </HeaderContainer>
-        </Container>
-    )
-}
 

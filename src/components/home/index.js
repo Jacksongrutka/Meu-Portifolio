@@ -14,21 +14,6 @@ import { ThemeContext } from "../../contexts/themeContext"
 
 export const Home = () => {
 
-    const {theme} = useContext(ThemeContext)
-
-    const Conteudo = styled.section`
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        background-color:${theme.tercearyBackgroundColor}
-        `
-    const CentralizacaoConteudo = styled.div`
-        width: 50%;
-        `
-    const FormacaoProjetos = styled.div`
-        display:flex;
-        margin: 100px 0;
-        `
     return (
         <>
             <Header/>
@@ -48,3 +33,17 @@ export const Home = () => {
     )
 }
 
+const Conteudo = styled.section`
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        background-color:${(props) => useContext(ThemeContext).theme.tercearyBackgroundColor}
+        `
+    const CentralizacaoConteudo = styled.div`
+        width: 50%;
+        `
+    const FormacaoProjetos = styled.div`
+        display:flex;
+        flex-direction: column;
+        margin: 100px 0;
+        `

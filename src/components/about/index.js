@@ -4,17 +4,29 @@ import { ThemeContext } from "../../contexts/themeContext"
 
 export const About = () => {
 
-    const {theme} = useContext(ThemeContext)
+    return (
+        <Container id="sobre">
+            <div>
+                <h2>Sobre</h2>
+                <h3>MINHA HISTORIA</h3>
+                <p>Meu nome é Jackson, e sou um programador Front-end. Eu sou apaixonado por programaçao e pretendo me tornar programador full-Stack. Durante meu aprendizado, tenho trabalhado em projetos desafiadores que me permitiram desenvolver minhas habilidades em CSS, Javascript e a area de React.</p>
+                <p>Além disso, Sou uma pessoa dedicada, comprometida e criativa, e isso me ajuda a trabalhar de forma colaborativa e eficaz com colegas e clientes. Fora do trabalho, gosto de games, que é um dos motivos de eu ter começado a estudar programaçao e amo gatos, um dos meus objetivos e criar uma ONG para acolher gatos de rua.</p>
+                <p>Estou animado em compartilhar meu portfólio com você e espero que possamos trabalhar juntos em projetos futuros.</p>
+            </div>
+        </Container>
+    )
+}
 
-    const Container = styled.section`
+const Container = styled.section`
     min-height: 50vh;
     display:flex;
-    background-color:${theme.secundaryBackgroundColor};
+    background-color:${(props) => useContext(ThemeContext).theme.secundaryBackgroundColor};
     justify-content: center;
     align-items: center;
     div{
         width:50%;
-        color: ${theme.secundaryColor};
+        color: ${(props) => useContext(ThemeContext).theme.secundaryColor};
+        margin: 50px 0;
     }
     div h2{
         font-size: 3rem;
@@ -25,18 +37,8 @@ export const About = () => {
     }
     div p{
         font-size: 2rem;
-        color:${theme.primaryColor};
-        line-height: 40px;
+        color:${(props) => useContext(ThemeContext).theme.primaryColor};
+        line-height: 30px;
+        margin-top: 30px;
     }
     `
-
-    return(
-        <Container id="sobre">
-                <div>
-                    <h2>Sobre</h2>
-                    <h3>MINHA HISTORIA</h3>
-                    <p>Lorem ipsum dolor sit amet. Et facere accusamus et repellat cupiditate non internos omnis eos voluptas temporibus nam cumque unde aut laboriosam ducimus ut maiores quia. Nam pariatur velit aut dolore nisi ad alias harum. Sed voluptates esse ut nesciunt saepe ut molestiae aspernatur ea autem fugiat id molestiae voluptas.</p>
-                </div>
-        </Container>
-    )
-}

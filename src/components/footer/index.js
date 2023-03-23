@@ -7,62 +7,7 @@ import { ThemeContext } from "../../contexts/themeContext"
 
 export const Footer = () => {
 
-    const {theme} = useContext(ThemeContext)
-
-    const Container = styled.div`
-    min-height: 50vh;
-    display:flex;
-    background-color:${theme.secundaryBackgroundColor};
-    justify-content: center;
-    align-items: center;
-    color:${theme.primaryColor};
-    `
-    const ContainerFooter = styled.div`
-    display:flex;
-    width: 50%;
-    justify-content: space-between;
-    height: 20vh;
-    `
-    const SocialMedia = styled.div`
-    display:flex;
-    flex-direction: column;
-    justify-content: space-between;
-    h3{
-        font-size:2rem;
-    }
-    `
-    const FooterContacts = styled.div`
-    display:flex;
-    flex-direction: column;
-    justify-content: space-between;
-    div p{
-        font-size: 1.5rem;
-    }
-    div .icon{
-        width: 1.5rem;
-        height: 1.5rem;
-        color:${theme.primaryColor};
-    }
-    `
-
-    const ContainerArrow = styled.div`
-    display:flex;
-    flex-direction: column;
-    justify-content:end;
-    a .arrow{
-        width:3rem;
-        height: 3rem;
-        color:${theme.primaryColor};
-    }
-`
-    const Icons = styled.div`
-    .icon{
-        width: 2rem;
-        height: 2rem;
-        padding: 0 10px;
-        color:${theme.primaryColor};
-    }
-`
+    
     return (
         <Container>
             <ContainerFooter>
@@ -94,4 +39,59 @@ export const Footer = () => {
         </Container>
     )
 }
+
+const Container = styled.div`
+    min-height: 50vh;
+    display:flex;
+    background-color:${(props) => useContext(ThemeContext).theme.secundaryBackgroundColor};
+    justify-content: center;
+    align-items: center;
+    color:${(props) => useContext(ThemeContext).theme.primaryColor};
+    `
+    const ContainerFooter = styled.div`
+    display:flex;
+    width: 50%;
+    justify-content: space-between;
+    height: 20vh;
+    `
+    const SocialMedia = styled.div`
+    display:flex;
+    flex-direction: column;
+    justify-content: space-between;
+    h3{
+        font-size:2rem;
+    }
+    `
+    const FooterContacts = styled.div`
+    display:flex;
+    flex-direction: column;
+    justify-content: space-between;
+    div p{
+        font-size: 1.5rem;
+    }
+    div .icon{
+        width: 1.5rem;
+        height: 1.5rem;
+        color:${(props) => useContext(ThemeContext).theme.primaryColor};
+    }
+    `
+
+    const ContainerArrow = styled.div`
+    display:flex;
+    flex-direction: column;
+    justify-content:end;
+    a .arrow{
+        width:3rem;
+        height: 3rem;
+        color:${(props) => useContext(ThemeContext).theme.primaryColor};
+    }
+`
+    const Icons = styled.div`
+    .icon{
+        width: 2rem;
+        height: 2rem;
+        padding: 0 10px;
+        color:${(props) => useContext(ThemeContext).theme.primaryColor};
+    }
+`
 
