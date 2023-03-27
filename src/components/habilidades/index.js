@@ -35,7 +35,7 @@ export const Habilidades = () => {
             <ContainerHabilidade>
                 <h4>ingles</h4>
                 <Base>
-                    <div style={{ width: '33%' }} />
+                    <div style={{ width: '66%' }} />
                 </Base>
             </ContainerHabilidade>
             <ContainerHabilidade>
@@ -97,9 +97,9 @@ const ContainerHabilidade = styled.div`
 const Base = styled.div`
         width:85%;
         height: 15px;
-        border-bottom: 1px solid #ccc;
+        border-bottom: 2px solid #ccc;
         div{
             height:100%;
-            border-bottom:2px solid #5569dc;
+            border-bottom:4px solid #5569dc;
         }
     `

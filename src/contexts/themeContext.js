@@ -21,7 +21,7 @@ export const themes = {
         themeIcon: faMoon,
         primaryBackgroundColor: "#020d3f",
         secundaryBackgroundColor: "#0a2d6c",
-        tercearyBackgroundColor: "#000",
+        tercearyBackgroundColor: "#1b1e23",
         headerImg: imgDark
     }
 }

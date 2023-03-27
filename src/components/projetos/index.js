@@ -32,8 +32,8 @@ export const Projetos = () => {
             </ContainerProjeto>
             <ContainerProjeto>
                 <ContainerTitle>
-                    <a href="https://jacksongrutka.github.io/litle-cat-life/" target="_blank">Litle cat life</a>
-                    <p>Projeto de uma loja virtual que estou trabalhando relacionada a gatos. ainda esta imcompleta!</p>
+                    <a href="https://jacksongrutka.github.io/litle-cat-life/" target="_blank">Little cat life</a>
+                    <p>Projeto de uma loja virtual que estou trabalhando relacionada a gatos. ainda esta incompleta!</p>
                 </ContainerTitle>
                 <ContainerImage>
                     <img src={imgLitleCatLife} alt="ilustraçao do projeto Litle cat life"></img>
