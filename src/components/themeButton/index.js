@@ -1,4 +1,5 @@
 import styled from "styled-components"
+import { breakpoint } from "../breakpoints"
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 
 
@@ -15,7 +16,8 @@ const A = styled.a`
     width: 100px;
     height: 50px;
     .icon{
-        width: 2rem;
-        height: 2rem;
+        width: 3rem;
+        height: 3rem;
+        color: #fff;
     }
 `

@@ -1,6 +1,7 @@
 import styled from "styled-components"
 import { useContext } from "react"
 import { ThemeContext } from "../../contexts/themeContext"
+import { breakpoint } from "../breakpoints"
 
 export const Habilidades = () => {
 
@@ -92,12 +93,21 @@ const ContainerHabilidade = styled.div`
             color: ${(props) => useContext(ThemeContext).theme.primaryColor};
             font-size:1.5rem;
             width:15%;
+            ${breakpoint('down','ms')`
+                width: 30%;
+            `}
+            ${breakpoint('down', 'sp')`
+                font-size: 1.2rem;
+            `}
         }
     `
 const Base = styled.div`
         width:85%;
         height: 15px;
         border-bottom: 2px solid #ccc;
+        ${breakpoint('down','ms')`
+            width: 70%;
+        `}
         div{
             height:100%;
             border-bottom:4px solid #5569dc;

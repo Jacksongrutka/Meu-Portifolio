@@ -1,6 +1,7 @@
 import styled from "styled-components"
 import { useContext } from "react"
 import { ThemeContext } from "../../contexts/themeContext"
+import { breakpoint } from "../breakpoints"
 
 export const About = () => {
 
@@ -27,18 +28,26 @@ const Container = styled.section`
         width:50%;
         color: ${(props) => useContext(ThemeContext).theme.secundaryColor};
         margin: 50px 0;
+        ${breakpoint('down' , 'lg')`
+        width: 80%;
+    `}
     }
     div h2{
         font-size: 3rem;
+       
     }
     div h3{
         font-size: 2rem;
         padding-bottom: 40px;
+        
     }
     div p{
         font-size: 2rem;
         color:${(props) => useContext(ThemeContext).theme.primaryColor};
         line-height: 30px;
         margin-top: 30px;
+        ${breakpoint('down', 'sp')`
+            font-size: 1.5rem;        
+        `}
     }
     `

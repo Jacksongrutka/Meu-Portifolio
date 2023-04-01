@@ -8,6 +8,7 @@ import { Footer } from "../footer"
 import { Interesses } from "../interesses"
 import { useContext } from "react"
 import { ThemeContext } from "../../contexts/themeContext"
+import { breakpoint } from "../breakpoints"
 
 
 
@@ -37,10 +38,13 @@ const Conteudo = styled.section`
         display: flex;
         flex-direction: column;
         align-items: center;
-        background-color:${(props) => useContext(ThemeContext).theme.tercearyBackgroundColor}
+        background-color:${(props) => useContext(ThemeContext).theme.tercearyBackgroundColor};
         `
     const CentralizacaoConteudo = styled.div`
         width: 50%;
+        ${breakpoint('down' , 'lg')`
+            width: 80%;
+        `}
         `
     const FormacaoProjetos = styled.div`
         display:flex;

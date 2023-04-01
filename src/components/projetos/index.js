@@ -4,6 +4,7 @@ import { ThemeContext } from "../../contexts/themeContext"
 import imgPokeList from "../../imagens/PokeList.png"
 import imgLandingPage from "../../imagens/PrimeiraLandingPage.png"
 import imgLitleCatLife from "../../imagens/LitleCatLife.png"
+import { breakpoint } from "../breakpoints"
 
 export const Projetos = () => {
 
@@ -61,16 +62,25 @@ display: flex;
 width: 100%;
 justify-content: space-between;
 margin-bottom: 100px;
+    ${breakpoint('down', 'sp')`
+        flex-direction:column;
+    `}
 `
 const ContainerTitle = styled.div`
 display:flex;
 width: 45%;
 flex-direction:column;
 align-items: flex-start;
+    ${breakpoint('down', 'sp')`
+        width: 100%;
+    `}
 a{  
     color:${(props) => useContext(ThemeContext).theme.primaryColor};
     font-size:1.8rem;
     padding-bottom: 40px;
+    ${breakpoint('down', 'sp')`
+      padding-bottom: 20px;  
+    `}
 }
 a:hover{
     color:${(props) => useContext(ThemeContext).theme.secundaryColor}
@@ -82,6 +92,10 @@ p{
 `
 const ContainerImage = styled.div`
 width: 50%;
+    ${breakpoint('down', 'sp')`
+        width:100%;
+        margin-top:20px    
+    `}
 img{
     width:100%;
 }

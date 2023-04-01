@@ -19,6 +19,7 @@ const A = styled.a`
     width: 150px;
     height: 40px;
     transition: 0.3s ease-in-out;
+    padding-bottom: 5px;
     }
     div:hover{
         background-color: #bbb;
