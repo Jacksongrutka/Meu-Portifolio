@@ -16,9 +16,9 @@ export const Footer = () => {
                     <h3>Adoraria ouvir de voçê</h3>
                     <div>
                         <Icons>
-                            <a href="https://www.instagram.com/jacksongrutka/"><FontAwesomeIcon icon={faInstagram} className="icon" /></a>
-                            <a href="https://www.linkedin.com/in/jackson-grutka-048633225/"><FontAwesomeIcon icon={faLinkedin} className="icon" /></a>
-                            <a href="https://github.com/Jacksongrutka"><FontAwesomeIcon icon={faGithub} className="icon" /></a>
+                            <a href="https://www.instagram.com/jacksongrutka/" target="blank"><FontAwesomeIcon icon={faInstagram} className="icon" /></a>
+                            <a href="https://www.linkedin.com/in/jackson-grutka-048633225/" target="blank"><FontAwesomeIcon icon={faLinkedin} className="icon" /></a>
+                            <a href="https://github.com/Jacksongrutka" target="blank"><FontAwesomeIcon icon={faGithub} className="icon" /></a>
                         </Icons>
                     </div>
                 </SocialMedia>

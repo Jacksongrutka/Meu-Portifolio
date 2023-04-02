@@ -59,8 +59,8 @@ export const Header = () => {
             <MenuSelecionado>
                 <Menu className={selecionado.selecao}>
                     <a href="#sobre"onClick={fecharMenu}>Sobre</a>
-                    <a href="#formacao"onClick={fecharMenu}>Formaçao e Experiência</a>
-                    <a href="#habilidades"onClick={fecharMenu}>Habilidade e Idiomas</a>
+                    <a href="#formacao"onClick={fecharMenu} >Formaçao e Experiência</a>
+                    <a href="#habilidades"onClick={fecharMenu} >Habilidade e Idiomas</a>
                     <a href="#interesses"onClick={fecharMenu}>Interesses</a>
                 </Menu>
             </MenuSelecionado>
@@ -88,9 +88,9 @@ export const Header = () => {
                             <p className="number"><FontAwesomeIcon icon={faWhatsapp} className="icon" />(51)989215428</p>
                         </Number>
                         <Icons>
-                            <a href="https://www.instagram.com/jacksongrutka/"><FontAwesomeIcon icon={faInstagram} className="icon" /></a>
-                            <a href="https://www.linkedin.com/in/jackson-grutka-048633225/"><FontAwesomeIcon icon={faLinkedin} className="icon" /></a>
-                            <a href="https://github.com/Jacksongrutka"><FontAwesomeIcon icon={faGithub} className="icon" /></a>
+                            <a href="https://www.instagram.com/jacksongrutka/" target="blank"><FontAwesomeIcon icon={faInstagram} className="icon" /></a>
+                            <a href="https://www.linkedin.com/in/jackson-grutka-048633225/" target="blank"><FontAwesomeIcon icon={faLinkedin} className="icon" /></a>
+                            <a href="https://github.com/Jacksongrutka" target="blank"><FontAwesomeIcon icon={faGithub} className="icon" /></a>
                         </Icons>
                         <ContainerButton>
                             <Button />

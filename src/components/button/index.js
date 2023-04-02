@@ -2,7 +2,7 @@ import styled from "styled-components"
 
 export const Button = () => {
     return(
-        <A href="../../arquivos/Curriculo_profissional_de_Jackson.pdf" download>
+        <A href="https://drive.google.com/file/d/1KuHsm0j4I8K9I2IpHagbqgQ4FAAtBFrz/view?usp=sharing" target="blank">
             <div>
                 <p>Baixar CV</p>
             </div>
