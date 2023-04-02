@@ -16,16 +16,16 @@ export const Footer = () => {
                     <h3>Adoraria ouvir de voçê</h3>
                     <div>
                         <Icons>
-                            <a href="https://www.instagram.com/jacksongrutka/" target="blank"><FontAwesomeIcon icon={faInstagram} className="icon" /></a>
-                            <a href="https://www.linkedin.com/in/jackson-grutka-048633225/" target="blank"><FontAwesomeIcon icon={faLinkedin} className="icon" /></a>
-                            <a href="https://github.com/Jacksongrutka" target="blank"><FontAwesomeIcon icon={faGithub} className="icon" /></a>
+                            <a href="https://instagram.com/grutkajackson?igshid=ZDdkNTZiNTM=" target="_blank"><FontAwesomeIcon icon={faInstagram} className="icon" /></a>
+                            <a href="https://www.linkedin.com/in/jackson-grutka-048633225/" target="_blank"><FontAwesomeIcon icon={faLinkedin} className="icon" /></a>
+                            <a href="https://github.com/Jacksongrutka" target="_blank"><FontAwesomeIcon icon={faGithub} className="icon" /></a>
                         </Icons>
                     </div>
                 </SocialMedia>
                 <FooterContacts>
                     <div>
                         <p>jgrutka01@gmail.com</p>
-                        <p className="number"><FontAwesomeIcon icon={faWhatsapp} className="icon" />(51)989215428</p>
+                        <p className="number"><FontAwesomeIcon icon={faWhatsapp} className="icon" /><a href="https://wa.me/5551989215428" target="_blank">(51)989215428</a></p>
                     </div>
                     <div className="containerButton">
                         <Button />
