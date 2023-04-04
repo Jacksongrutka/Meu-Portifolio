@@ -13,8 +13,8 @@ export const Interesses = () => {
             <h3>FORA DO ESCRITÓRIO</h3>
             <ContainerInteresse>
                 <ContainerTitle>
-                    <h4>Riot games</h4>
-                    <p>no meu tempo livre, eu gosto de jogar todos jogos da empresa Riot games, que sao. League of legends, Legends of Runeterra e Valorant</p>
+                    <h4>Riot Games</h4>
+                    <p>No meu tempo livre gosto de jogar todos jogos pertencentes à empresa Riot Games. que são: League of legends, Legends of Runeterra e Valorant</p>
                 </ContainerTitle>
                 <ContainerInfo>
                     <h5>Meu elo no TeamFightTatics é Ouro 2</h5>

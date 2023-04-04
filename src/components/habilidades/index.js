@@ -7,7 +7,7 @@ export const Habilidades = () => {
 
     return (
         <Container id="habilidades">
-            <h2>Habilidade e Idiomas</h2>
+            <h2>Habilidades e Idiomas</h2>
             <h3>O QUE OFEREÇO</h3>
             <ContainerHabilidade>
                 <h4>HTML</h4>
@@ -34,7 +34,7 @@ export const Habilidades = () => {
                 </Base>
             </ContainerHabilidade>
             <ContainerHabilidade>
-                <h4>ingles</h4>
+                <h4>Inglês</h4>
                 <Base>
                     <div style={{ width: '66%' }} />
                 </Base>
@@ -64,7 +64,7 @@ export const Habilidades = () => {
                 </Base>
             </ContainerHabilidade>
             <ContainerHabilidade>
-                <h4>Logica</h4>
+                <h4>Lógica</h4>
                 <Base>
                     <div style={{ width: '75%' }} />
                 </Base>

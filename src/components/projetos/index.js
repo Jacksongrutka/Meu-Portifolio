@@ -16,7 +16,7 @@ export const Projetos = () => {
             <ContainerProjeto>
                 <ContainerTitle>
                     <a href="https://github.com/Jacksongrutka/poke-List" target="_blank">Poke-List</a>
-                    <p>Projeto onde eu uso a api do pokemon para apresentar na tela uma listagem de pokemons e suas caracteristicas</p>
+                    <p>Projeto onde eu uso a API do pokemon para apresentar na tela uma listagem de pokemons e suas caracteristicas.</p>
                 </ContainerTitle>
                 <ContainerImage>
                     <img src={imgPokeList} alt="ilustraçao do projeto Poke-List"></img>
@@ -25,7 +25,7 @@ export const Projetos = () => {
             <ContainerProjeto>
                 <ContainerTitle>
                     <a href="https://jacksongrutka.github.io/primeira-landing-page/" target="_blank">Landing Page</a>
-                    <p>Primeira landing page que eu fiz</p>
+                    <p>Primeira landing page que eu fiz.</p>
                 </ContainerTitle>
                 <ContainerImage>
                     <img src={imgLandingPage} alt="ilustraçao do projeto Landing page"></img>
@@ -34,7 +34,7 @@ export const Projetos = () => {
             <ContainerProjeto>
                 <ContainerTitle>
                     <a href="https://jacksongrutka.github.io/litle-cat-life/" target="_blank">Little cat life</a>
-                    <p>Projeto de uma loja virtual que estou trabalhando relacionada a gatos. ainda esta incompleta!</p>
+                    <p>Projeto de uma loja virtual que estou trabalhando relacionada a gatos. Ainda está incompleta!</p>
                 </ContainerTitle>
                 <ContainerImage>
                     <img src={imgLitleCatLife} alt="ilustraçao do projeto Litle cat life"></img>
@@ -78,6 +78,7 @@ a{
     color:${(props) => useContext(ThemeContext).theme.primaryColor};
     font-size:1.8rem;
     padding-bottom: 40px;
+    text-decoration: underline;
     ${breakpoint('down', 'sp')`
       padding-bottom: 20px;  
     `}

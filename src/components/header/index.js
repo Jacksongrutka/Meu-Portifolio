@@ -59,8 +59,8 @@ export const Header = () => {
             <MenuSelecionado>
                 <Menu className={selecionado.selecao}>
                     <a href="#sobre"onClick={fecharMenu}>Sobre</a>
-                    <a href="#formacao"onClick={fecharMenu} >Formaçao e Experiência</a>
-                    <a href="#habilidades"onClick={fecharMenu} >Habilidade e Idiomas</a>
+                    <a href="#formacao"onClick={fecharMenu} >Formação e Experiência</a>
+                    <a href="#habilidades"onClick={fecharMenu} >Habilidades e Idiomas</a>
                     <a href="#interesses"onClick={fecharMenu}>Interesses</a>
                 </Menu>
             </MenuSelecionado>
@@ -82,10 +82,10 @@ export const Header = () => {
                             <img src={imgJackson}></img>
                         </Image>
                         <h2>Jackson Grutka</h2>
-                        <p >Cursando superior em análise e desenvolvimento de sistemas <br /> porto alegre, RS</p>
+                        <p >Cursando superior em análise e desenvolvimento de sistemas <br /> Porto Alegre, RS</p>
                         <Number>
                             <p>jgrutka01@gmail.com</p>
-                            <p className="number"><FontAwesomeIcon icon={faWhatsapp} className="icon" /><a href="https://wa.me/5551989215428" target="_blank">(51)989215428</a></p>
+                            <a href="https://wa.me/5551989215428" target="_blank" className="number"><FontAwesomeIcon icon={faWhatsapp} className="icon" />(51)989215428</a>
                         </Number>
                         <Icons>
                             <a href="https://instagram.com/grutkajackson?igshid=ZDdkNTZiNTM=" target="_blank"><FontAwesomeIcon icon={faInstagram} className="icon" /></a>
@@ -338,6 +338,9 @@ const Image = styled.div`
     }
 `
 const Number = styled.div`
+    a{
+        font-size: 1.5rem;
+    }
     ${breakpoint('down', 'sp')`
         margin-top:10%;            
     `}

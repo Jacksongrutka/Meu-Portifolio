@@ -11,13 +11,13 @@ export const Formacao = () => {
             <h3>O QUE APRENDI</h3>
             <ContainerCurso>
                 <h4>12/04/2022---08/12/2022</h4>
-                <p>Curso Programador Front-end no curso do Dev em Dobro dos gemeos</p>
+                <p>Curso Programador Front-end no curso do Dev em Dobro dos gêmeos</p>
                 <a href="https://www.linkedin.com/search/results/all/?keywords=https%3A%2F%2Fwww%2Elinkedin%2Ecom%2Fschool%2Fdevquest-dev-em-dobro%2F&lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base%3BkcF0XnPzT1iYqxj34%2B97jw%3D%3D" target="_blank">Entre no linkedin do curso Dev em dobro</a>
             </ContainerCurso>
             <ContainerCurso>
                 <h4>2023---2025</h4>
                 <p>Faculdade em analise e desenvolvimento de sistemas na anhanguera</p>
-                <a href="https://www.anhanguera.com/" target="_blank">entre no site da anhanguera</a>
+                <a href="https://www.anhanguera.com/" target="_blank">Entre no site da anhanguera</a>
             </ContainerCurso>
         </Container>
     )
@@ -51,6 +51,7 @@ const ContainerCurso = styled.div`
     a{
         color: ${(props) => useContext(ThemeContext).theme.primaryColor};
         font-size: 1.5rem;
+        text-decoration: underline;
     }
     a:hover{
         color: ${(props) => useContext(ThemeContext).theme.secundaryColor}

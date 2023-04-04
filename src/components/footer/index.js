@@ -13,7 +13,7 @@ export const Footer = () => {
         <Container>
             <ContainerFooter>
                 <SocialMedia>
-                    <h3>Adoraria ouvir de voçê</h3>
+                    <h3>Adoraria ouvir de você</h3>
                     <div>
                         <Icons>
                             <a href="https://instagram.com/grutkajackson?igshid=ZDdkNTZiNTM=" target="_blank"><FontAwesomeIcon icon={faInstagram} className="icon" /></a>
@@ -25,7 +25,7 @@ export const Footer = () => {
                 <FooterContacts>
                     <div>
                         <p>jgrutka01@gmail.com</p>
-                        <p className="number"><FontAwesomeIcon icon={faWhatsapp} className="icon" /><a href="https://wa.me/5551989215428" target="_blank">(51)989215428</a></p>
+                        <a href="https://wa.me/5551989215428" target="_blank"className="number"><FontAwesomeIcon icon={faWhatsapp} className="icon" />(51)989215428</a>
                     </div>
                     <div className="containerButton">
                         <Button />
@@ -99,6 +99,13 @@ const Container = styled.div`
             flex-direction:column;
             width:100%;
             align-items: center;
+        `}  
+    }
+    div a{
+        font-size: 1.5rem;
+        ${breakpoint('down', 'sp')` 
+            font-size: 2rem;
+            padding-bottom: 10px;
         `}  
     }
     div p{
