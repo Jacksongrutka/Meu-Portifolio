@@ -1,0 +1,19 @@
+{
+  "files": {
+    "main.js": "/Meu-Portifolio/static/js/main.2762f84b.js",
+    "static/js/787.81ce9db2.chunk.js": "/Meu-Portifolio/static/js/787.81ce9db2.chunk.js",
+    "static/media/FundoClaro.png": "/Meu-Portifolio/static/media/FundoClaro.57aa6a948f98b4bf7807.png",
+    "static/media/FundoEscuro.png": "/Meu-Portifolio/static/media/FundoEscuro.df4cffc8de8e0ab86d87.png",
+    "static/media/LitleCatLife.png": "/Meu-Portifolio/static/media/LitleCatLife.999a604aeb05862e5fe1.png",
+    "static/media/PokeList.png": "/Meu-Portifolio/static/media/PokeList.94cb694dd0907345c936.png",
+    "static/media/PrimeiraLandingPage.png": "/Meu-Portifolio/static/media/PrimeiraLandingPage.ef8911c8cb98a4923cb5.png",
+    "static/media/FotoJackson.jfif": "/Meu-Portifolio/static/media/FotoJackson.31366af036de3ffdfe83.jfif",
+    "static/media/Elo.png": "/Meu-Portifolio/static/media/Elo.ccda7e1ee2248f949be2.png",
+    "index.html": "/Meu-Portifolio/index.html",
+    "main.2762f84b.js.map": "/Meu-Portifolio/static/js/main.2762f84b.js.map",
+    "787.81ce9db2.chunk.js.map": "/Meu-Portifolio/static/js/787.81ce9db2.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/js/main.2762f84b.js"
+  ]
+}
