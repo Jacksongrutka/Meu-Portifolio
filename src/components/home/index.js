@@ -5,7 +5,6 @@ import { Formacao } from "../formacao"
 import { Projetos } from "../projetos"
 import { Habilidades } from "../habilidades"
 import { Footer } from "../footer"
-import { Interesses } from "../interesses"
 import { useContext } from "react"
 import { ThemeContext } from "../../contexts/themeContext"
 import { breakpoint } from "../breakpoints"
@@ -26,7 +25,6 @@ export const Home = () => {
                         <Projetos/>
                     </FormacaoProjetos>
                     <Habilidades/>
-                    <Interesses/>
                 </CentralizacaoConteudo>
             </Conteudo>
             <Footer/>
@@ -41,7 +39,7 @@ const Conteudo = styled.section`
         background-color:${(props) => useContext(ThemeContext).theme.tercearyBackgroundColor};
         `
     const CentralizacaoConteudo = styled.div`
-        width: 50%;
+        width: 70%;
         ${breakpoint('down' , 'lg')`
             width: 80%;
         `}

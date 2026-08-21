@@ -10,9 +10,8 @@ export const About = () => {
             <div>
                 <h2>Sobre</h2>
                 <h3>MINHA HISTORIA</h3>
-                <p>Meu nome é Jackson, e sou um programador Front-end. Sou apaixonado por programação e pretendo me tornar programador full-Stack. Durante meu aprendizado tenho trabalhado em projetos desafiadores, que me permitiram desenvolver minhas habilidades em CSS, JavaScript e em aplicações REACT.</p>
-                <p>Além disso, Sou uma pessoa dedicada, comprometida e criativa e isso me ajuda a trabalhar de forma eficaz e coloborativa com clientes e colegas. Fora do trabalho gosto de games, que é um dos motivos para eu começar a estudar programaçâo. Também amo gatos e um dos meus objetivos é criar uma ONG para acolher gatos de rua.</p>
-                <p>Espero que goste do meu portfólio e que possamos trabalhar em grandes projetos no futuro!</p>
+                <p>Sou desenvolvedor Full-Stack com experiência no desenvolvimento de aplicações web utilizando React e Angular. Tenho experiência na criação de interfaces responsivas, componentização e integração com APIs. Tenho como objetivo atuar profissionalmente no desenvolvimento de aplicações web, contribuindo para projetos que envolvam boas práticas de desenvolvimento, código organizado e soluções eficientes. Meu portfólio reúne projetos desenvolvidos ao longo da minha formação, demonstrando minha evolução técnica e experiência prática com diferentes tecnologias e ferramentas.</p>
+                <p>Desenvolvo sites, lojas virtuais e sistemas de gerenciamento personalizados, com front-end, back-end e banco de dados integrados. Se você tiver algum problema que eu possa resolver, entre em contato.</p>
             </div>
         </Container>
     )
@@ -25,7 +24,7 @@ const Container = styled.section`
     justify-content: center;
     align-items: center;
     div{
-        width:50%;
+        width:70%;
         color: ${(props) => useContext(ThemeContext).theme.secundaryColor};
         margin: 50px 0;
         ${breakpoint('down' , 'lg')`

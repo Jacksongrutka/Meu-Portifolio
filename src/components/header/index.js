@@ -61,7 +61,6 @@ export const Header = () => {
                     <a href="#sobre"onClick={fecharMenu}>Sobre</a>
                     <a href="#formacao"onClick={fecharMenu} >Formação e Experiência</a>
                     <a href="#habilidades"onClick={fecharMenu} >Habilidades e Idiomas</a>
-                    <a href="#interesses"onClick={fecharMenu}>Interesses</a>
                 </Menu>
             </MenuSelecionado>
             <HeaderContainer>
@@ -73,7 +72,7 @@ export const Header = () => {
                     <div>
                         <h3>OLÁ! EU SOU</h3>
                         <h1>Jackson Grutka</h1>
-                        <h2>Desenvolvedor Front-End</h2>
+                        <h2>Desenvolvedor</h2>
                     </div>
                 </Titles>
                 <Contact>

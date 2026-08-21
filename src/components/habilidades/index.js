@@ -10,21 +10,15 @@ export const Habilidades = () => {
             <h2>Habilidades e Idiomas</h2>
             <h3>O QUE OFEREÇO</h3>
             <ContainerHabilidade>
-                <h4>HTML</h4>
+                <h4>Angular</h4>
                 <Base>
-                    <div style={{ width: '90%' }} />
-                </Base>
-            </ContainerHabilidade>
-            <ContainerHabilidade>
-                <h4>CSS</h4>
-                <Base>
-                    <div style={{ width: '80%' }} />
+                    <div style={{ width: '60%'}} />
                 </Base>
             </ContainerHabilidade>
             <ContainerHabilidade>
                 <h4>Javascript</h4>
                 <Base>
-                    <div style={{ width: '70%' }} />
+                    <div style={{ width: '80%' }} />
                 </Base>
             </ContainerHabilidade>
             <ContainerHabilidade>
@@ -36,35 +30,11 @@ export const Habilidades = () => {
             <ContainerHabilidade>
                 <h4>Inglês</h4>
                 <Base>
-                    <div style={{ width: '66%' }} />
-                </Base>
-            </ContainerHabilidade>
-            <ContainerHabilidade>
-                <h4>Jest</h4>
-                <Base>
-                    <div style={{ width: '30%' }} />
+                    <div style={{ width: '70%' }} />
                 </Base>
             </ContainerHabilidade>
             <ContainerHabilidade>
                 <h4>API's</h4>
-                <Base>
-                    <div style={{ width: '75%' }} />
-                </Base>
-            </ContainerHabilidade>
-            <ContainerHabilidade>
-                <h4>Responsivo</h4>
-                <Base>
-                    <div style={{ width: '80%' }} />
-                </Base>
-            </ContainerHabilidade>
-            <ContainerHabilidade>
-                <h4>Clean code</h4>
-                <Base>
-                    <div style={{ width: '60%' }} />
-                </Base>
-            </ContainerHabilidade>
-            <ContainerHabilidade>
-                <h4>Lógica</h4>
                 <Base>
                     <div style={{ width: '75%' }} />
                 </Base>
