@@ -81,7 +81,7 @@ export const Header = () => {
                             <img src={imgJackson}></img>
                         </Image>
                         <h2>Jackson Grutka</h2>
-                        <p >Cursando superior em análise e desenvolvimento de sistemas <br /> Porto Alegre, RS</p>
+                        <p >Porto Alegre, RS</p>
                         <Number>
                             <p>jgrutka01@gmail.com</p>
                             <a href="https://wa.me/5551989215428" target="_blank" className="number"><FontAwesomeIcon icon={faWhatsapp} className="icon" />(51)989215428</a>
