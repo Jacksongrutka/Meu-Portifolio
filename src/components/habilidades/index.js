@@ -55,12 +55,6 @@ const Container = styled.div`
     &.visible{
         opacity: 1;
         transform: translateY(0);
-    }opacity: 0;
-    transform: translateY(30px);
-    transition: opacity 2s ease, transform 2s ease;
-    &.visible{
-        opacity: 1;
-        transform: translateY(0);
     }
     h2{
         font-size: 3rem;
