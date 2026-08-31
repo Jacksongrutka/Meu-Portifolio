@@ -2,11 +2,14 @@ import styled from "styled-components"
 import { useContext } from "react"
 import { ThemeContext } from "../../contexts/themeContext"
 import { breakpoint } from "../breakpoints"
+import { useOnScreen } from "../../hooks/useOnScreen"
 
 export const Habilidades = () => {
 
+    const [ref , visible] = useOnScreen();
+
     return (
-        <Container id="habilidades">
+        <Container id="habilidades" ref={ref} className={visible ? "visible" : ""}>
             <h2>Habilidades e Idiomas</h2>
             <h3>O QUE OFEREÇO</h3>
             <ContainerHabilidade>
@@ -46,6 +49,19 @@ export const Habilidades = () => {
 
 const Container = styled.div`
     margin: 100px 0;
+    opacity: 0;
+    transform: translateY(30px);
+    transition: opacity 2s ease, transform 2s ease;
+    &.visible{
+        opacity: 1;
+        transform: translateY(0);
+    }opacity: 0;
+    transform: translateY(30px);
+    transition: opacity 2s ease, transform 2s ease;
+    &.visible{
+        opacity: 1;
+        transform: translateY(0);
+    }
     h2{
         font-size: 3rem;
         color: ${(props) => useContext(ThemeContext).theme.secundaryColor};

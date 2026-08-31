@@ -2,11 +2,14 @@ import styled from "styled-components"
 import { useContext } from "react"
 import { ThemeContext } from "../../contexts/themeContext"
 import { breakpoint } from "../breakpoints"
+import { useOnScreen } from "../../hooks/useOnScreen"
 
 export const About = () => {
 
+    const [ref, visible] = useOnScreen();
+
     return (
-        <Container id="sobre">
+        <Container id="sobre" ref={ref} className={visible ? "visible" : ""}>
             <div>
                 <h2>Sobre</h2>
                 <h3>MINHA HISTORIA</h3>
@@ -23,6 +26,13 @@ const Container = styled.section`
     background-color:${(props) => useContext(ThemeContext).theme.secundaryBackgroundColor};
     justify-content: center;
     align-items: center;
+    opacity: 0;
+    transform: translateY(30px);
+    transition: opacity 2s ease, transform 2s ease;
+    &.visible{
+        opacity: 1;
+        transform: translateY(0);
+    }
     div{
         width:70%;
         color: ${(props) => useContext(ThemeContext).theme.secundaryColor};

@@ -1,12 +1,14 @@
 import styled from "styled-components"
 import { useContext } from "react"
 import { ThemeContext } from "../../contexts/themeContext"
+import { useOnScreen } from "../../hooks/useOnScreen"
 
 export const Formacao = () => {
 
+    const [ref, visible] = useOnScreen();
     
     return (
-        <Container>
+        <Container ref={ref} className={visible ? "visible" : ""}>
             <h2>Formaçao</h2>
             <h3>O QUE APRENDI</h3>
             <ContainerCurso>
@@ -21,6 +23,13 @@ export const Formacao = () => {
 const Container = styled.div`
     width:100%;
     margin-bottom: 50px;
+    opacity: 0;
+    transform: translateY(30px);
+    transition: opacity 2s ease, transform 2s ease;
+    &.visible{
+        opacity: 1;
+        transform: translateY(0);
+    }
     h2{
         font-size: 3rem;
         color: ${(props) => useContext(ThemeContext).theme.secundaryColor};
